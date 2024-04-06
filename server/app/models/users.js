@@ -1,4 +1,4 @@
-import { hash as _hash } from 'helpers/crypt';
+import { hash as _hash } from '#app/helpers/crypt.js';
 const PASSWORD_EXPIRE_DAYS = 90;
 
 export default (sequelize, DataTypes) => {

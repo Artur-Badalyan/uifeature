@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import cookieParser from 'cookie-parser';
 import cors from "cors";
-import routes from "./app/routes/index.js";
+import routes from "./routes/index.js";
 // const worker = require('./app/services/worker');
 const { json, urlencoded } = bodyParser;
 

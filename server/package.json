@@ -2,11 +2,11 @@
   "name": "node_sequilize",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "bin/index.js",
   "type": "module",
   "scripts": {
-    "debug": "NODE_ENV=development nodemon app/bin/index.js",
-    "start": "NODE_ENV=development nodemon app/bin/index.js",
+    "debug": "NODE_ENV=development nodemon bin/index.js",
+    "start": "NODE_ENV=development nodemon bin/index.js",
     "migrate-start": "sequelize db:migrate --env development && NODE_ENV=development node server",
     "migrate": "npx sequelize db:migrate",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -36,7 +36,7 @@
     "nodemailer": "^6.9.13",
     "path": "^0.12.7",
     "sequelize": "^6.37.2",
-    "umzug": "^3.8.0",
+    "umzug": "^2.3.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {

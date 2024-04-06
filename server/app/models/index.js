@@ -2,9 +2,10 @@ import * as url from 'url';
 import fs from 'fs';
 import Sequelize from 'sequelize';
 import path from 'path';
-import { dbSettings, env as nodeEnv } from '#app/settings.js';
+import settings from '#app/settings.js';
 
 const { join } = path;
+const { dbSettings, env: nodeEnv } = settings;
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 const basename = path.basename(__filename);

@@ -1,10 +1,10 @@
 import './dotenv.js';
 
 import http from 'http';
-import settings from 'settings';
-import models from 'models';
-import DBMigration from 'migrations'
-import app from '../../server.js';
+import settings from '#app/settings.js';
+import models from '#app/models/index.js';
+import DBMigration from '#app/migrations/index.js'
+import app from '../app/server.js';
 
 /**
  * Get port and store in express

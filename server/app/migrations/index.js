@@ -17,7 +17,7 @@ class DBMigration {
                     log
                 ],
                 path: 'app/migrations',
-                pattern: /^\d+(.*)\.js$/
+                pattern: /^\d+(.*)\.cjs$/
             },
 
         });
@@ -29,7 +29,7 @@ class DBMigration {
 
     logEvent(eventName) {
         return (name) => {
-            // console.log(`${name} ${eventName}`);
+            // this.log.debug(${name} ${eventName});
         };
     }
 
@@ -41,7 +41,7 @@ class DBMigration {
 
     reset() {
         //revert all migrations
-        return this.umzug.down({to: 0});
+        return this.umzug.down({ to: 0 });
     }
 }
 
